@@ -1,6 +1,6 @@
 /* smaller than 1200px */
 @media only screen and (max-width: 1200px){
-
+    /*transition between desktop nav and hamburger nav*/
     /* cancel desktop navigation */
     #desktop-nav {
         display: none;
@@ -9,6 +9,22 @@
     /*show the hamburger menu*/
     #hamburger-nav {
         display: flex;
+    }
+
+    /* add styles for the hamburger menu */
+    #hamburger-nav {
+        .menu-links {
+            list-style: none;
+
+        }
+    }
+
+    .menu-links li {
+        margin-bottom: 0.5rem;
+    }
+
+    .menu-links a {
+        text-underline-offset: 0.5rem;
     }
 }
 
