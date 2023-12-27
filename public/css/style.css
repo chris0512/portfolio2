@@ -148,6 +148,11 @@ a:hover {
 
 
 /* sections */
+
+/*hero sections*/
+#profile {
+    margin-top: 100px;
+}
 .section__pic-container img {
     width: 100%;
     height: 100%;
