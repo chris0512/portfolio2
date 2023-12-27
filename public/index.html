@@ -11,6 +11,8 @@
     <title>My Portfolio</title>
 </head>
 <body>
+
+    <!--    desktop nav-->
     <nav id="desktop-nav">
         <div class="logo">Chris</div>
         <div>
@@ -21,6 +23,32 @@
                 <li><a href="#">Contact</a></li>
             </ul>
         </div>
+    </nav>
+
+    <!--    hamburger nav-->
+    <nav id="hamburger-nav">
+        <div class="logo">Chris</div>
+
+        <!--hamburger menu-->
+        <div class="hamburger-menu">
+
+            <!--hamburger icon-->
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <!--menu-links-->
+            <div class="menu-links">
+                <li><a href="#" onclick="toggleMenu()">About</a></li>
+                <li><a href="#" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#" onclick="toggleMenu()">Contact</a></li>
+            </div>
+
+        </div>
+
     </nav>
 
 

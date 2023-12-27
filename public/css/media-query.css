@@ -1,15 +1,15 @@
-@media only screen and (max-width: 480px) {
-    a, .btn {
-        transition: all 0.8s ease;
+/* smaller than 1200px */
+@media only screen and (max-width: 1200px){
+
+    /* cancel desktop navigation */
+    #desktop-nav {
+        display: none;
     }
 
-    .nav-links {
-        font-size: 8px;
+    /*show the hamburger menu*/
+    #hamburger-nav {
+        display: flex;
     }
-
-    a {
-        text-underline-offset: 0.5rem;
-    }
-
-
 }
+
+
