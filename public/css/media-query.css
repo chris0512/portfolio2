@@ -11,21 +11,21 @@
         display: flex;
     }
 
-    /* add styles for the hamburger menu */
-    #hamburger-nav {
-        .menu-links {
-            list-style: none;
+    /*!* add styles for the hamburger menu *!*/
+    /*#hamburger-nav {*/
+    /*    .menu-links {*/
+    /*        list-style: none;*/
 
-        }
-    }
+    /*    }*/
+    /*}*/
+    
+    /*.menu-links li {*/
+    /*    margin-bottom: 0.5rem;*/
+    /*}*/
 
-    .menu-links li {
-        margin-bottom: 0.5rem;
-    }
-
-    .menu-links a {
-        text-underline-offset: 0.5rem;
-    }
+    /*.menu-links a {*/
+    /*    text-underline-offset: 0.5rem;*/
+    /*}*/
 }
 
 
