@@ -57,8 +57,10 @@ a:hover {
     text-decoration-color: rgb(181, 181, 181);
 }
 
-.logo {
-    font-size: 2rem;
+.logo img{
+    /*font-size: 2rem;*/
+    height: 50px;
+    width: auto;
 }
 
 .logo:hover {
