@@ -173,7 +173,10 @@ section {
     height: 400px;
     width: 400px;
     margin: auto 0;
+    transition: transform 0.5s ease;
 }
+
+
 
 .section__pic-container img {
     object-fit: contain;
