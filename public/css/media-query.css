@@ -1,5 +1,7 @@
 @media only screen and (max-width: 480px) {
-
+    a, .btn {
+        transition: all 0.8s ease;
+    }
 
     .nav-links {
         font-size: 8px;

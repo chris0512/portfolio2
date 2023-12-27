@@ -21,7 +21,7 @@ p {
 
 /*transition*/
 a,.btn {
-    transition: all 0.5s ease;
+    transition: all 0.1s ease;
 }
 
 
@@ -54,6 +54,15 @@ a {
 a:hover {
     color: grey;
     text-decoration: underline;
+    text-decoration-color: rgb(181, 181, 181);
+}
+
+.logo {
+    font-size: 2rem;
+}
+
+.logo:hover {
+    cursor: default;
 }
 
 
