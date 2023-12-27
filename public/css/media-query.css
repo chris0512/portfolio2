@@ -11,21 +11,18 @@
         display: flex;
     }
 
-    /*!* add styles for the hamburger menu *!*/
-    /*#hamburger-nav {*/
-    /*    .menu-links {*/
-    /*        list-style: none;*/
-
-    /*    }*/
-    /*}*/
-
-    /*.menu-links li {*/
-    /*    margin-bottom: 0.5rem;*/
-    /*}*/
-
-    /*.menu-links a {*/
-    /*    text-underline-offset: 0.5rem;*/
-    /*}*/
 }
 
+
+@media only screen and (max-width: 480px) {
+    #profile {
+        flex-direction: column;
+    }
+
+    .section__pic-container img {
+        object-fit: contain;
+        width: 50%;
+        height: 50%;
+    }
+}
 
