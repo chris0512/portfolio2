@@ -18,9 +18,10 @@
 
 
 @media (max-width: 1000px) {
-    #profile,
-    #about {
-        margin-top: 50px;
+    #profile, #about {
+        height: auto;
+        padding: 20px;
+        margin-bottom: 60px; /*增加元素之間的空間以避免重疊*/
     }
 
     #about {
@@ -29,14 +30,16 @@
         align-items: center;
         justify-content: center;
         text-align: center;
-        gap: 10px;
     }
 
-    .section__pic-container,
-    .about-pic {
+    .section__pic-container, .about-pic {
         transform: scale(0.75);
-        margin-left: 0;
-        margin-right: 0;
+        margin: 0 auto; /*將圖像置於中心*/
+    }
+
+    .section__pic-container {
+        height: auto;
+        width: auto;
     }
 
     .flex-container {
