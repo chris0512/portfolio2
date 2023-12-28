@@ -151,6 +151,7 @@ a:hover {
 
 /* sections */
 section {
+    position: relative;
     padding-top: 4vh;
     height: 96vh;
     margin: 0 10rem;
@@ -159,8 +160,14 @@ section {
 }
 
 .section-container {
-    display: flex;
+    gap: 4rem;
+    height: 80%;
 
+}
+
+p.section__text_p1 {
+    text-align: center;  /* 添加这个属性 */
+    /* 这里可以放其他样式属性 */
 }
 
 /* hero sections*/
@@ -177,8 +184,8 @@ section {
 
 .section__pic-container {
     display: flex;
-    height: 500px;
-    width: 500px;
+    height: 400px;
+    width: 400px;
     margin: auto 0;
 }
 
@@ -271,16 +278,17 @@ section {
 }
 
 
+
 /*about section*/
 #about {
     position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column; /* Stack the items vertically */
 }
 
 .flex-container {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2em;
 }
 
 .about-containers {
@@ -302,14 +310,145 @@ section {
     display: flex;
 }
 
+.section__pic-container, /* Add this selector */
+.section__pic-container img, /* Add this selector */
 .about-pic {
     border-radius: 2rem;
-    height: auto; /* increased size */
-    max-width: 100%/* increased size */
+    height: 400px; /* Set to 400px */
+    width: 400px; /* Set to 400px */
+    object-fit: contain; /* To keep aspect ratio of image */
+}
+
+.section__pic-container {
+    justify-content: center; /* Center the image if its width is less than the container's width */
+    align-items: center; /* Center the image if its height is less than the container's height */
 }
 
 .arrow {
     position: absolute;
     right: -5rem;
     bottom: 2.5rem;
+}
+
+
+.details-container {
+    padding: 1.5rem;
+    flex: 1;
+    background: white;
+    border-radius: 2rem;
+    border: 0.1rem solid rgb(163, 163, 163);
+    text-align: center;
+}
+
+
+#experience {
+    position: relative;
+}
+
+.experience-sub-title {
+    color: rgb(85, 85, 85);
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+}
+
+.experience-details-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.article-container {
+    display: flex;
+    text-align: initial;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2.5rem;
+    justify-content: space-around;
+}
+
+article {
+    display: flex;
+    width: 10rem;
+    justify-content: space-around;
+    gap: 0.5rem;
+}
+
+.article .icon {
+    cursor: default;
+}
+
+
+/*project*/
+#projects {
+    position: relative;
+}
+
+.color-container {
+    border-color: rgb(163, 163, 163);
+    background: rgb(250, 250, 250);
+}
+
+.project-img {
+    border-radius: 2rem;
+    width: 90%;
+    height: 90%;
+}
+
+.project-title {
+    margin: 1rem;
+    color: black;
+}
+
+.project-btn {
+    color: black;
+    border-color: rgb(163, 163, 163);
+}
+
+
+#contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 70vh;
+}
+
+.contact-info-upper-container {
+    display: flex;
+    justify-content: center;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    background: rgb(250, 250, 250);
+    margin: 2rem auto;
+    padding: 0.5rem;
+}
+
+.contact-info-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem;
+}
+
+.container-info-container p {
+    font-size: larger;
+}
+
+.contact-icon {
+    cursor: default;
+}
+
+.email-icon {
+    height: 2.5rem;
+}
+
+/*footer section*/
+footer {
+    height: 26vh;
+    margin: 0 1rem;
+}
+
+footer p {
+    text-align: center;
 }
