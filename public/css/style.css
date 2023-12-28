@@ -160,6 +160,7 @@ section {
 
 .section-container {
     display: flex;
+
 }
 
 /* hero sections*/
@@ -176,8 +177,8 @@ section {
 
 .section__pic-container {
     display: flex;
-    height: 400px;
-    width: 400px;
+    height: 500px;
+    width: 500px;
     margin: auto 0;
 }
 
@@ -270,10 +271,48 @@ section {
 }
 
 
+/*about section*/
+#about {
+    position: relative;
+}
 
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2em;
+}
 
+.about-containers {
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
 
+.about-details-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    margin: 2em auto 0 auto;
+    justify-content: center;
+}
 
+.about-containers,
+.about-details-container {
+    display: flex;
+}
+
+.about-pic {
+    border-radius: 2rem;
+    height: auto; /* increased size */
+    max-width: 100%/* increased size */
+}
+
+.arrow {
+    position: absolute;
+    right: -5rem;
+    bottom: 2.5rem;
+}
 
 
 
